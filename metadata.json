@@ -1,0 +1,6 @@
+{
+  "name": "GlyphForge - AI Handwriting to Font Studio & Real-Time OCR",
+  "description": "Transform handwriting into production-ready TTF fonts with real-time OCR, drag-and-drop scanning, auto-deskew, instant glyph extraction, and live sandbox.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

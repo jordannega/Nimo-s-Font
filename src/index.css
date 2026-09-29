@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .heading-font {
+    font-family: 'Outfit', sans-serif;
+  }
+  .mono-font {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #090d16;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* Checkerboard pattern for transparency */
+.bg-checker {
+  background-size: 16px 16px;
+  background-position: 0 0, 8px 0, 8px -8px, 0px 8px;
+  background-image: linear-gradient(45deg, #1e293b 25%, transparent 25%),
+                    linear-gradient(-45deg, #1e293b 25%, transparent 25%),
+                    linear-gradient(45deg, transparent 75%, #1e293b 75%),
+                    linear-gradient(-45deg, transparent 75%, #1e293b 75%);
+}
+
+/* Notebook paper texture for sandbox preview */
+.paper-lined {
+  background-color: #fdfbf7;
+  background-image: linear-gradient(#e2e8f0 1px, transparent 1px);
+  background-size: 100% 36px;
+  line-height: 36px;
+}
+
+.paper-grid {
+  background-color: #fafaf9;
+  background-size: 24px 24px;
+  background-image: 
+    linear-gradient(to right, #e7e5e4 1px, transparent 1px),
+    linear-gradient(to bottom, #e7e5e4 1px, transparent 1px);
+}
+
+.paper-dark {
+  background-color: #030712;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
